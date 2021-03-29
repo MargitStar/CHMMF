@@ -2,7 +2,7 @@ import sys
 
 def exact_function(x):
     return 2 * (x - 1) ** 2
-
+Í
 def apprs_diff(y1, y2, N, result):
     for i in range(N):
         result = max(result, abs(y1[i] - y2[i * 2]))
@@ -20,7 +20,7 @@ def make_difference_scheme(A, B, h):
     a = [0]
     b = [-1 / h - 2 + h / 2]
     c = [1 / h]
-    f = [- 3 + (4/5)*(h/2)]
+    f = [- 3 + (4.5)*(h/2)]
     for i in range(1, N):
         x.append(x[i - 1] + h)
         a.append(1/(h ** 2) - (x[i]+1)/ (2*h))
